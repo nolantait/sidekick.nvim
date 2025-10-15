@@ -185,7 +185,7 @@ function M.send(opts)
   State.with(function(state)
     Util.exit_visual_mode()
     vim.schedule(function()
-      state.session:send(msg .. "\n")
+      state.session:send(msg .. "")
       if opts.submit then
         state.session:submit()
       end
