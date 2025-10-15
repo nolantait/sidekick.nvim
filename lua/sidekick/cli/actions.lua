@@ -14,7 +14,7 @@ function M.prompt(t)
         vim.cmd.startinsert()
       end)
       if prompt then
-        t:send(prompt .. "\n")
+        t:send(prompt)
       end
     end)
   end)
